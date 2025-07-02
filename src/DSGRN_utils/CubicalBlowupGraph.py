@@ -166,6 +166,47 @@ class CubicalBlowupGraph:
         ext_directions = [n for n in range(self.dim) if xor_shape & (1 << n)]
         return ext_directions
 
+    def relative_position_vector(self, cc_cell1, cc_cell2):
+        """Return the relative position vector between two cubical cells where cc_cell1 is a face of cc_cell2.
+        
+        The relative position vector p(ξ,ξ') is defined componentwise by:
+        p_n(ξ,ξ') = (-1)^(v_n-v'_n) * (w_n-w'_n)
+        where ξ = [v,w] and ξ' = [v',w'] are cells with ξ ≺ ξ'.
+        
+        Parameters
+        ----------
+        cc_cell1 : int
+            Index of the face cell in the cubical complex
+        cc_cell2 : int
+            Index of the coface cell in the cubical complex
+            
+        Returns
+        -------
+        rel_pos_vec : list[int]
+            Relative position vector with components in {0, ±1}
+        """
+        # Get coordinates and shapes for both cells
+        coords1 = self.cubical_complex.coordinates(cc_cell1)
+        coords2 = self.cubical_complex.coordinates(cc_cell2)
+        shape1 = self.cubical_complex.cell_shape(cc_cell1)
+        shape2 = self.cubical_complex.cell_shape(cc_cell2)
+        
+        # Convert shapes to binary vectors
+        shape_vec1 = [1 if shape1 & (1 << n) else 0 for n in range(self.dim)]
+        shape_vec2 = [1 if shape2 & (1 << n) else 0 for n in range(self.dim)]
+        
+        # Compute relative position vector
+        rel_pos_vec = []
+        for n in range(self.dim):
+            # Compute p_n = (-1)^(v_n - v'_n) * (w_n - w'_n)
+            v_diff = coords1[n] - coords2[n]
+            w_diff = shape_vec1[n] - shape_vec2[n]
+            sign = -1 if v_diff == 1 else 1
+            p_n = sign * w_diff
+            rel_pos_vec.append(int(p_n))
+            
+        return rel_pos_vec
+
     def star(self, cc_cell):
         """Return the list of cells in the star of cc_cell"""
         # Get the star of cc_cell (discard fringe cells)
@@ -648,12 +689,17 @@ class CubicalBlowupGraph:
                 # Add edge corresponding to F_2 if level >= 2
                 if self.level > 1:
                     # Get decision wall flow direction and add edge
-                    flow_dir = self.decision_wall_direction(cc_cell1, cc_cell2)
+                    flow_dir = self.decision_wall_direction(cc_cell1, cc_cell2) 
                     if flow_dir == -1:
+                        print(f"Adding edge {cell2} {cell1} because flow_dir == -1")
                         self.digraph.add_edge(cell2, cell1)
-                        continue
                     if flow_dir == 1:
                         self.digraph.add_edge(cell1, cell2)
+                        print(f"Adding edge {cell1} {cell2} because flow_dir == 1")
+                        # pos_vector = self.relative_position_vector(cc_cell1, cc_cell2)
+                        # pos_vector_n = sum(pos_vector)
+                        # if pos_vector_n == flow_dir: 
+                        #     self.digraph.add_edge(cell2,cell1)
                         continue
                 # Add edges corresponding to F_3 if level == 3
                 if self.level == 3:
