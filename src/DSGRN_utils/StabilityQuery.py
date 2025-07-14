@@ -5,7 +5,7 @@ import DSGRN
 import DSGRN_utils
 from collections import defaultdict
 
-def StabilityQuery(network, param_indices=None, level=3):
+def StabilityQuery(network, param_indices=None, level=4):
     parameter_graph = DSGRN.ParameterGraph(network)
     if param_indices == None:
         param_indices = range(parameter_graph.size())

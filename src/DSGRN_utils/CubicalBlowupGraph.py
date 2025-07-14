@@ -2,14 +2,15 @@
 ### MIT LICENSE 2024 Marcio Gameiro
 
 # TODO: 1) Maybe cache regulation map and cycle decomposition to increase performance
-#       2) Level 3 is allowed in higher dimensions (add restrictions to that)
-#       3) The default value of self_edges is True (change it to False)
+#       2) Level 3 and 4 are allowed in higher dimensions (add restrictions to that?)
+#       3) The default value of self_edges is True (change it to False?)
+#       4) Add 3D Morse sets plotting cpabilities
 
 import DSGRN
 import pychomp
 
 class CubicalBlowupGraph:
-    def __init__(self, parameter=None, labelling=None, num_thresholds=None, self_edges=True, level=3):
+    def __init__(self, parameter=None, labelling=None, num_thresholds=None, self_edges=True, level=4):
         # Check if input arguments are valid
         if parameter is None and (labelling is None or num_thresholds is None):
             raise ValueError('Either parameter or labelling and num_thresholds must be provided.')
@@ -165,47 +166,6 @@ class CubicalBlowupGraph:
         # Directions essential for cc_coface and inessential for cc_face
         ext_directions = [n for n in range(self.dim) if xor_shape & (1 << n)]
         return ext_directions
-
-    def relative_position_vector(self, cc_cell1, cc_cell2):
-        """Return the relative position vector between two cubical cells where cc_cell1 is a face of cc_cell2.
-        
-        The relative position vector p(ξ,ξ') is defined componentwise by:
-        p_n(ξ,ξ') = (-1)^(v_n-v'_n) * (w_n-w'_n)
-        where ξ = [v,w] and ξ' = [v',w'] are cells with ξ ≺ ξ'.
-        
-        Parameters
-        ----------
-        cc_cell1 : int
-            Index of the face cell in the cubical complex
-        cc_cell2 : int
-            Index of the coface cell in the cubical complex
-            
-        Returns
-        -------
-        rel_pos_vec : list[int]
-            Relative position vector with components in {0, ±1}
-        """
-        # Get coordinates and shapes for both cells
-        coords1 = self.cubical_complex.coordinates(cc_cell1)
-        coords2 = self.cubical_complex.coordinates(cc_cell2)
-        shape1 = self.cubical_complex.cell_shape(cc_cell1)
-        shape2 = self.cubical_complex.cell_shape(cc_cell2)
-        
-        # Convert shapes to binary vectors
-        shape_vec1 = [1 if shape1 & (1 << n) else 0 for n in range(self.dim)]
-        shape_vec2 = [1 if shape2 & (1 << n) else 0 for n in range(self.dim)]
-        
-        # Compute relative position vector
-        rel_pos_vec = []
-        for n in range(self.dim):
-            # Compute p_n = (-1)^(v_n - v'_n) * (w_n - w'_n)
-            v_diff = coords1[n] - coords2[n]
-            w_diff = shape_vec1[n] - shape_vec2[n]
-            sign = -1 if v_diff == 1 else 1
-            p_n = sign * w_diff
-            rel_pos_vec.append(int(p_n))
-            
-        return rel_pos_vec
 
     def star(self, cc_cell):
         """Return the list of cells in the star of cc_cell"""
@@ -498,9 +458,14 @@ class CubicalBlowupGraph:
         if self.wall_label(cc_dec_wall_top_cell, n_opaque, side) == side:
             # cc_face is an exit face of cc_coface
             return -face_sign
-        else:
-            # cc_face is an entrance face of cc_coface
-            return face_sign
+        # If level < 4 check if n_opaque regulates another direction at cc_face
+        if self.level < 4:
+            # Get active regulation map of cc_face
+            act_map = self.active_regulation_map(cc_face)
+            if n_opaque in act_map and act_map[n_opaque] != n_opaque:
+                return 0
+        # cc_face is an entrance face of cc_coface
+        return face_sign
 
     def semi_opaque_cell(self, cc_cell):
         """Return True if cc_cell is semi-opaque"""
@@ -686,23 +651,18 @@ class CubicalBlowupGraph:
                 if flow_dir == 1:
                     self.digraph.add_edge(cell1, cell2)
                     continue
-                # Add edge corresponding to F_2 if level >= 2
+                # Add edge corresponding to F_2 or F_4 if level >= 2 or level == 4
                 if self.level > 1:
                     # Get decision wall flow direction and add edge
-                    flow_dir = self.decision_wall_direction(cc_cell1, cc_cell2) 
+                    flow_dir = self.decision_wall_direction(cc_cell1, cc_cell2)
                     if flow_dir == -1:
-                        print(f"Adding edge {cell2} {cell1} because flow_dir == -1")
                         self.digraph.add_edge(cell2, cell1)
+                        continue
                     if flow_dir == 1:
                         self.digraph.add_edge(cell1, cell2)
-                        print(f"Adding edge {cell1} {cell2} because flow_dir == 1")
-                        # pos_vector = self.relative_position_vector(cc_cell1, cc_cell2)
-                        # pos_vector_n = sum(pos_vector)
-                        # if pos_vector_n == flow_dir: 
-                        #     self.digraph.add_edge(cell2,cell1)
                         continue
-                # Add edges corresponding to F_3 if level == 3
-                if self.level == 3:
+                # Add edges corresponding to F_3 if level >= 3
+                if self.level > 2:
                     # Get cyclic extension flow direction and unstable cells and add edges
                     flow_dir, unst_cells = self.cyclic_extension_direction(cc_cell1, cc_cell2)
                     if flow_dir == -1:

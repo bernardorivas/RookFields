@@ -1,21 +1,19 @@
 ### PlotMorseSets.py
 ### MIT LICENSE 2024 Marcio Gameiro
 
-# TODO: 1) Add projections and slices for higher dimensions
-#       2) Add 3D plotting cpabilities
-
 import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, Polygon, FancyArrow
 from matplotlib.collections import PatchCollection
-
+from collections import defaultdict
 import numpy as np
 
-def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None, clist=None,
-                  alpha=0.7, plot_bdry_cells=True, plot_arrows=True, plot_self_arrows=True,
-                  plot_verts=True, plot_edges=True, arrow_clr='blue', double_arrow_clr='red',
-                  self_arrow_clr='red', fig_w=7, fig_h=7, plot_axis=False, axis_labels=True,
-                  xlabel='$x$', ylabel='$y$', fontsize=15, ax=None, fig_fname=None, dpi=300):
+def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, proj_dims=None, proj_slice=None,
+                  cmap=None, clist=None, alpha=0.7, plot_bdry_cells=True, plot_arrows=True,
+                  plot_self_arrows=True, plot_verts=True, plot_edges=True, arrow_clr='blue',
+                  double_arrow_clr='red', self_arrow_clr='red', fig_w=7, fig_h=7, plot_axis=False,
+                  axis_labels=True, xlabel='$x$', ylabel='$y$', fontsize=15, ax=None, fig_fname=None,
+                  dpi=300):
     """Plot Morse sets and the state transition graph"""
     # Cells line width
     line_width = 2
@@ -78,6 +76,40 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
             return True
         return False
 
+    def in_projection_slice(coords):
+        """Check if cell is in correct slice if a projection slice is given"""
+        if proj_slice == None:
+            return True
+        for k in range(dim):
+            if k not in {d1, d2} and coords[k] != proj_slice[k]:
+                return False
+        return True
+
+    def min_node_cell(cell1, cell2):
+        """Given two cells return the one with grading corresponding to the minimal Morse
+           node if they both belong to Morse sets. Return the cell belonging to a Morse
+           set if only one of them is in a Morse set. Return cell1 if neither of them
+           belong to Morse sets. This function is used to determine a representative of
+           the set of cells with the same projection and this representative cell is
+           then used to determine the face color of the projected cell."""
+        # Get the gradings for both cells
+        cell1_grading = graded_complex.value(cell1)
+        cell2_grading = graded_complex.value(cell2)
+        # Return the other cell if not a Morse graph vertex
+        if cell2_grading not in vertex_indices:
+            return cell1
+        if cell1_grading not in vertex_indices:
+            return cell2
+        # Return the other cell if not in list of Morse nodes
+        if vertex_indices[cell2_grading] not in morse_nodes:
+            return cell1
+        if vertex_indices[cell1_grading] not in morse_nodes:
+            return cell2
+        # Return the cell corresponding to the minimal Morse node
+        if vertex_indices[cell1_grading] < vertex_indices[cell2_grading]:
+            return cell1
+        return cell2
+
     def face_color(cell_grading):
         """Return face color"""
         # Color white if not a Morse graph vertex
@@ -109,10 +141,10 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
         # Get the cell complex coordinates of cell
         coords = cell_complex.coordinates(cell)
         # Get real coordinates for the cell vertices
-        v0 = (real_coord(coords[0]),     real_coord(coords[1]))
-        v1 = (real_coord(coords[0] + 1), real_coord(coords[1]))
-        v2 = (real_coord(coords[0] + 1), real_coord(coords[1] + 1))
-        v3 = (real_coord(coords[0]),     real_coord(coords[1] + 1))
+        v0 = (real_coord(coords[d1]),     real_coord(coords[d2]))
+        v1 = (real_coord(coords[d1] + 1), real_coord(coords[d2]))
+        v2 = (real_coord(coords[d1] + 1), real_coord(coords[d2] + 1))
+        v3 = (real_coord(coords[d1]),     real_coord(coords[d2] + 1))
         return [v0, v1, v2, v3]
 
     def cell_centroid(cell):
@@ -137,6 +169,8 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
         centroid = np.sum(list(shared_verts), axis=0) / len(shared_verts)
         return centroid
 
+    # Get the cell complex dimension
+    dim = graded_complex.complex().dimension()
     # Number of Morse sets
     num_morse_sets = len(morse_graph.vertices())
     # Get list of Morse nodes to plot if not given
@@ -159,21 +193,73 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
     else:
         # Normalization for color map
         cmap_norm = matplotlib.colors.Normalize(vmin=0, vmax=num_morse_sets-1)
-    # Get the cell complex dimension
-    dim = graded_complex.complex().dimension()
+    # Projection dimensions
+    if proj_dims == None:
+        d1 = 0
+        d2 = 1
+    else:
+        d1 = proj_dims[0]
+        d2 = proj_dims[1]
+    # Make sure projection dimensions are valid
+    assert max(d1, d2) < dim, "Wrong projection dimensions"
+    # Make projection slice a list if it is int
+    if isinstance(proj_slice, int):
+        proj_slice = [proj_slice] * dim
+        proj_slice[d1] = -1
+        proj_slice[d2] = -1
     # Get the cubical cell complex
     cell_complex = graded_complex.complex()
     # Get indexing of the Morse graph vertices from the labels
     vertex_index = lambda v: int(morse_graph.vertex_label(v).split(':')[0].strip())
     vertex_indices = {v: vertex_index(v) for v in morse_graph.vertices()}
-    # Collection of top cells to plot (collection of allowed top cells)
-    allowed_top_cells = set([cell for cell in cell_complex(dim) if allowed_cell(cell)])
+    # # Collection of top cells to plot (collection of allowed top cells)
+    # allowed_top_cells = set([cell for cell in cell_complex(dim) if allowed_cell(cell)])
+
+    # Get projected cells and their adjacencies
+    projected_cells = {}
+    cells_adjacencies = defaultdict(set)
+    cells_double_edges = defaultdict(set)
+    for cell1 in cell_complex(dim):
+        if not allowed_cell(cell1):
+            continue
+        # Get the cell complex coordinates of cell1
+        coords1 = cell_complex.coordinates(cell1)
+        # Check if cell1 is in correct slice
+        if not in_projection_slice(coords1):
+            continue
+        # Get projected coordinates of cell1
+        proj_coords1 = (coords1[d1], coords1[d2])
+        # Get the representative cell associated to the projected coordinates
+        cell2 = projected_cells[proj_coords1] if proj_coords1 in projected_cells else cell1
+        # Update representative cell with the minimal node cell
+        projected_cells[proj_coords1] = min_node_cell(cell1, cell2)
+        # Get adjacencies of cell1 in the STG
+        for cell2 in stg.digraph.adjacencies(cell1):
+            if not allowed_cell(cell2):
+                continue
+            # Get the cell complex coordinates of cell2
+            coords2 = cell_complex.coordinates(cell2)
+            # Check if cell2 is in correct slice
+            if not in_projection_slice(coords2):
+                continue
+            # Get projected coordinates of cell2
+            proj_coords2 = (coords2[d1], coords2[d2])
+            # Skip cell if same projection but not self edge
+            if proj_coords1 == proj_coords2 and cell1 != cell2:
+                continue
+            # Add cell2 to the list of adjacencies
+            cells_adjacencies[proj_coords1].add(proj_coords2)
+            # Check if it is a double edges and add to list
+            if cell1 in stg.digraph.adjacencies(cell2):
+                cells_double_edges[proj_coords1].add(proj_coords2)
 
     # Make polygon patches for dim 2 and get the set of cell vertices
     polygon_patches = [[], []]
     cell_complex_vertices = set()
-    # Loop through the top cells
-    for cell in allowed_top_cells:
+    # Loop through projected top cells
+    for proj_coords in projected_cells:
+        # Get representative cell
+        cell = projected_cells[proj_coords]
         # Get cell vertices
         cell_verts = cell_vertices(cell)
         # Get the cell grading
@@ -199,20 +285,22 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
     # keep it like this for now (these flags are honored below)
     centroid_patches = []
     arrow_patches = []
-    # Loop through the top cells
-    for cell1 in allowed_top_cells:
-        # Get list of adjacencies of cell1 in the STG
-        adjacencies = set([c for c in stg.digraph.adjacencies(cell1) if c in allowed_top_cells])
+    # Loop through projected top cells
+    for proj_coords1 in projected_cells:
+        # Get representative cell
+        cell1 = projected_cells[proj_coords1]
         # Get cell1 centroid
         cell1_center = cell_centroid(cell1)
         # Plot centroid as a filled circle if self edge
-        if cell1 in adjacencies:
+        if proj_coords1 in cells_adjacencies[proj_coords1]:
             polygon = Circle(cell1_center, center_size, fc=self_arrow_clr, ec='black')
             centroid_patches.append(polygon)
         # Plot STG edges as arrows
-        for cell2 in adjacencies:
+        for proj_coords2 in cells_adjacencies[proj_coords1]:
+            # Get representative cell
+            cell2 = projected_cells[proj_coords2]
             # Skip self edges
-            if cell2 == cell1:
+            if proj_coords2 == proj_coords1:
                 continue
             # Get cell2 centroid
             cell2_center = cell_centroid(cell2)
@@ -235,7 +323,7 @@ def PlotMorseSets(morse_graph, stg, graded_complex, morse_nodes=None, cmap=None,
             x, dx = arrow_tail[0], arrow_head[0] - arrow_tail[0]
             y, dy = arrow_tail[1], arrow_head[1] - arrow_tail[1]
             # Get arrow color (use double_arrow_clr if double arrow)
-            arr_clr = double_arrow_clr if cell1 in stg.digraph.adjacencies(cell2) else arrow_clr
+            arr_clr = double_arrow_clr if proj_coords2 in cells_double_edges[proj_coords1] else arrow_clr
             # Plot arrow (STG edge)
             arrow = FancyArrow(x, y, dx, dy, head_width=0.1, head_length=0.1, overhang=0.5,
                                fc=arr_clr, ec=arr_clr, length_includes_head=True)

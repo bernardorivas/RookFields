@@ -8,8 +8,10 @@
 # 2021-03-06
 
 import DSGRN
-import pychomp
+from pychomp import *
 import DSGRN_utils
+# from CubicalBlowupGraph import *
+# from Poset_E import *
 import itertools
 import numpy as np
 import json
@@ -277,7 +279,7 @@ def state_transition_graph_json(fc_stg):
 
 
 def save_morse_graph_database_json(network, database_fname, param_indices=None,
-                                   verts_colors=None, thres_type=None, level=None):
+                                   verts_colors=None, thres_type=None, level=4):
     net_spec = network.specification()
     network = DSGRN.Network(net_spec, edge_blowup='none')
     parameter_graph = DSGRN.ParameterGraph(network)
@@ -306,8 +308,8 @@ def save_morse_graph_database_json(network, database_fname, param_indices=None,
             morse_graph, stg, graded_complex = DSGRN_utils.ConleyMorseGraph(parameter, level=level)
             fc_stg = stg
             # fc_stg = CubicalBlowupGraph(parameter, level=level)
-        (dag, fibration) = pychomp.FlowGradedComplex(fc_stg.complex(), fc_stg.adjacencies())
-        connection_matrix = pychomp.ConnectionMatrix(fibration)
+        (dag, fibration) = FlowGradedComplex(fc_stg.complex(), fc_stg.adjacencies())
+        connection_matrix = ConnectionMatrix(fibration)
         # conley_indices = connection_matrix.count()
         fringenode = fibration.value(fc_stg.complex().size() - 1)
         # A Morse set is trivial if it is a single cell with no self edge
