@@ -1,0 +1,6 @@
+^Wip1 -> ATM
+ATM&^Wip1 -> Chk2
+p53 -> Mdm2
+p53 -> Wip1
+^ATM&Chk2&^Mdm2 -> p53
+ATM&^Mdm2 -> p53
