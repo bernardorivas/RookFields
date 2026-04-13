@@ -1,0 +1,102 @@
+\section{Code Usage}
+\label{sec:code}
+
+\Bernardo{I will assume that \textsc{DSGRN\_utils} is merged with \textsc{DSGRN}. There are many utilities that I'm ignoring (equilibrium cells, etc.)}
+
+Dynamic Signature of Gene Regulatory Networks (DSGRN) provides computational tools for analyzing network dynamics through the combinatorial decomposition of parameter space. A preliminary analysis allows the identification of multilevel models as in Figs~\ref{fig:multi1}(c) and~\ref{fig:multi2}(c) \cite{Cummins2017b}. These encompass all Boolean dynamics, and include the identification of multi-cell attractors and unstable strongly connected multi-cell sets in the discrete system. Further analysis provides a dynamical characterization of (sufficiently steep~\cite{rook_field:24}) continuous ODE models associated to the network structure.
+
+In this section, we introduce readers to the expected output and interpretation of DSGRN, and include Jupyter notebook tutorials available with the software. DSGRN is installable via \texttt{
+pip install DSGRN}. Our running example will be the toggle switch network from Section~\ref{subsec:TS}.
+
+\subsection{Defining a Regulatory Network $\bRN$}
+
+The first step is defining a regulatory network $\bRN=(V,E,\delta)$ (Definition~\ref{def:RN}) using DSGRN string-based specification format.  Each line in the network specification defines a node and its regulatory inputs associated via an algebraic expression. The format is
+\begin{center}
+  \texttt{node\_name : algebraic\_expression : optional\_parameter},
+\end{center}
+\begin{itemize}
+  \item \texttt{node\_name}: Node identifier (e.g., gene or protein name)
+  \item \texttt{algebraic\_expression}: Specifies network topology and edge signs. Activation of node $i$ is denoted by $i$ and repression by $\sim i$. The algebraic expression is given by a combination of products and sums, where $(i+j)(\sim k)$ indicates a node receives inputs from activators $i,j$ and repressor $k$.
+  \item \texttt{optional\_modifiers}: Optional flags to restrict parameter space: \texttt{E} (Essential functions only), \texttt{B} (Boolean parameters only), \texttt{M} (Multi-Boolean), or combinations like \texttt{BE}.
+\end{itemize}
+\begin{rem}
+  The algebraic expression serves two purposes: (1) it defines the network topology by identifying which edges exist and their signs (activation vs.\ repression), and (2) in the original DSGRN framework~\cite{Cummins2017b}, it determines the parameter space partition structure. In this work, we focus on Boolean parameters where the partition structure does not affect the parameter space.
+\end{rem}
+To define the network, we call the network constructor. For example,
+\begin{minted}[fontsize=\small]{python}
+import DSGRN
+network_spec = """
+v1 : v1 + v2
+v2 : (~v1) + v2
+"""
+network = DSGRN.Network(network_spec)
+DSGRN.DrawGraph(network) # plot the associated network
+\end{minted}
+
+\subsection{Parameter Graph}
+
+The parameter graph $\PG = (\cP,\cE)$ (Section~\ref{sec:PG}) organizes all DSGRN parameters that are compatible with the regulatory network $\bRN$. The size of the parameter graph depends on the network structure and any specified modifiers. For our 2-node network:
+\begin{minted}[fontsize=\small]{python}
+parameter_graph = DSGRN.ParameterGraph(network)
+print(parameter_graph.size())  # Output: 1600
+\end{minted}
+
+The parameter space can be restricted using modifiers in the network specification. For example, adding \texttt{B} to specify Boolean-only parameters reduces the parameter count, while \texttt{E} restricts to essential parameters.
+
+\subsection{Morse Graph}
+For a parameter $p \in \cP$, DSGRN computes the Morse graph $\MG(\cF)$ (Definition~\ref{def:DSGRN_MG}). We refer to \cite{rook_field:24} for the detailed algorithms that produce multivalued maps $\cF : \cX \rightrightarrows \cX$. To compute and plot the morse graph, and associated Morse sets (when possible), one can write
+\begin{minted}[fontsize=\small]{python}
+morse_graph, stg, graded_complex = DSGRN.ConleyMorseGraph(parameter)
+DSGRN.PlotMorseGraph(morse_graph, label='a')
+DSGRN.PlotMorseSets(morse_graph, stg, graded_complex)
+\end{minted}
+The \texttt{label} parameter controls how Morse graph nodes are annotated: \texttt{'c'} displays Conley indices (default), \texttt{'s'} shows the size (number of cells), and \texttt{'a'} provides annotations such as FP (fixed point), PO (periodic orbit), T (trivial), or M (more complex).
+
+\subsection{A fully-connected 2-network}
+
+Consider the following regulatory network $\bRN=(V,E,\delta)$ associated with the network Figure~\ref{fig:22network}(a)
+
+\begin{minted}[fontsize=\small]{python}
+net_spec = """
+  v1 : v1 + v2
+  v2 : (~v1)v2
+"""
+network = DSGRN.Network(net_spec)
+parameter_graph = DSGRN.ParameterGraph(network)
+
+print('Parameter graph size:', parameter_graph.size())
+# output: Parameter graph size: 1600
+
+par_index = 752
+parameter = parameter_graph.parameter(par_index)
+
+morse_graph, stg, graded_complex = DSGRN.ConleyMorseGraph(parameter)
+DSGRN.PlotMorseGraph(morse_graph)
+DSGRN.PlotMorseSets(morse_graph,stg,graded_complex)
+\end{minted}
+
+\subsection{Another example}
+
+5-dimensional
+
+\begin{minted}[fontsize=\small]{python}
+net_spec = """
+  v1 : v1 + (~v2) + (~v3)
+  v2 : (~v1) + v2
+  v3 : (~v2) + v3
+  v4 : v2
+  v5 : v3 + v4 + v5
+"""
+
+network = DSGRN.Network(net_spec)
+parameter_graph = DSGRN.ParameterGraph(network)
+
+print('Parameter graph size:', parameter_graph.size())
+# output: Parameter graph size: 13608000000
+
+par_index = 5103162287
+parameter = parameter_graph.parameter(par_index)
+
+morse_graph, stg, graded_complex = DSGRN.ConleyMorseGraph(parameter)
+DSGRN.PlotMorseGraph(morse_graph)
+\end{minted}
