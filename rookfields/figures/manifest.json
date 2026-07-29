@@ -1,0 +1,253 @@
+{
+  "gallery2d": [
+    {
+      "network": "N2_b",
+      "index": 974,
+      "caption": "ex:mccord -- the running wall labelling of fig:wall_labeling(A)",
+      "file": "gallery_N2_b_974.png",
+      "go_pairs": 4,
+      "external": 2,
+      "d3_triples": 2,
+      "morse_nodes": 3
+    },
+    {
+      "network": "N2_a",
+      "index": 752,
+      "caption": "ex:saddlesaddlebif -- two admissible connection matrices",
+      "file": "gallery_N2_a_752.png",
+      "go_pairs": 1,
+      "external": 1,
+      "d3_triples": 0,
+      "morse_nodes": 9
+    },
+    {
+      "network": "N2_a",
+      "index": 47,
+      "caption": "ex:trivial_index_2D -- one trivial-index node",
+      "file": "gallery_N2_a_47.png",
+      "go_pairs": 0,
+      "external": 0,
+      "d3_triples": 0,
+      "morse_nodes": 4
+    },
+    {
+      "network": "toggle",
+      "index": 4,
+      "caption": "toggle switch -- bistable",
+      "file": "gallery_toggle_4.png",
+      "go_pairs": 0,
+      "external": 0,
+      "d3_triples": 0,
+      "morse_nodes": 3
+    },
+    {
+      "network": "N2_b",
+      "index": 1376,
+      "caption": "the richest GO structure found: 6 pairs, 3 triples",
+      "file": "gallery_N2_b_1376.png",
+      "go_pairs": 6,
+      "external": 3,
+      "d3_triples": 3,
+      "morse_nodes": 1
+    },
+    {
+      "network": "N2_a",
+      "index": 968,
+      "caption": "several GO pairs and a three-node Morse graph",
+      "file": "gallery_N2_a_968.png",
+      "go_pairs": 4,
+      "external": 2,
+      "d3_triples": 2,
+      "morse_nodes": 3
+    }
+  ],
+  "examples": [
+    {
+      "label": "ex:saddle_saddle_3D_intro",
+      "file": "ex_saddle_saddle_3D_intro.png",
+      "source": "introduction6.tex:402",
+      "level": 3,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 25,
+      "paper_nodes": 25
+    },
+    {
+      "label": "ex:introPeriodic",
+      "file": "ex_introPeriodic.png",
+      "source": "introduction6.tex:498",
+      "level": 3,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 2,
+      "paper_nodes": 2
+    },
+    {
+      "label": "ex:saddlesaddlebif",
+      "file": "ex_saddlesaddlebif.png",
+      "source": "examples4.tex:39",
+      "level": 3,
+      "dim": 2,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 9,
+      "paper_nodes": 9
+    },
+    {
+      "label": "ex:saddle_saddle_3D_example",
+      "file": "ex_saddle_saddle_3D_example.png",
+      "source": "examples4.tex:263",
+      "level": 3,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 25,
+      "paper_nodes": 25
+    },
+    {
+      "label": "ex:periodicOrbit3",
+      "file": "ex_periodicOrbit3.png",
+      "source": "examples4.tex:307",
+      "level": 3,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 2,
+      "paper_nodes": 2
+    },
+    {
+      "label": "ex:periodicOrbit3_F3",
+      "file": "ex_periodicOrbit3_F3.png",
+      "source": "examples4.tex:435",
+      "level": 3,
+      "dim": 3,
+      "differs": true,
+      "verdict": "different",
+      "legacy_nodes": 13,
+      "paper_nodes": 14
+    },
+    {
+      "label": "ex:mccord",
+      "file": "ex_mccord.png",
+      "source": "examples4.tex:489",
+      "level": 3,
+      "dim": 2,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 3,
+      "paper_nodes": 3
+    },
+    {
+      "label": "ex:3d_example_1",
+      "file": "ex_3d_example_1.png",
+      "source": "examples4.tex:538",
+      "level": 3,
+      "dim": 3,
+      "differs": true,
+      "verdict": "same invariants, different cells",
+      "legacy_nodes": 13,
+      "paper_nodes": 13
+    },
+    {
+      "label": "EMT-6D-semiconjugacy",
+      "file": "EMT-6D-semiconjugacy.png",
+      "source": "examples4.tex:663",
+      "level": 2,
+      "dim": 6,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 9,
+      "paper_nodes": 9
+    },
+    {
+      "label": "ex:trivial_index_2D",
+      "file": "ex_trivial_index_2D.png",
+      "source": "examples4.tex:766",
+      "level": 3,
+      "dim": 2,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 4,
+      "paper_nodes": 4
+    },
+    {
+      "label": "ex:trivial_index_3D_F3",
+      "file": "ex_trivial_index_3D_F3.png",
+      "source": "examples4.tex:786",
+      "level": 3,
+      "dim": 3,
+      "differs": true,
+      "verdict": "same invariants, different cells",
+      "legacy_nodes": 4,
+      "paper_nodes": 4
+    },
+    {
+      "label": "ex:trivial_indices",
+      "file": "ex_trivial_indices.png",
+      "source": "examples4.tex:801",
+      "level": 3,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 36,
+      "paper_nodes": 36
+    },
+    {
+      "label": "EMT-6D-trivial-indices",
+      "file": "EMT-6D-trivial-indices.png",
+      "source": "examples4.tex:820",
+      "level": 2,
+      "dim": 6,
+      "differs": true,
+      "verdict": "same invariants, different cells",
+      "legacy_nodes": 25,
+      "paper_nodes": 25
+    },
+    {
+      "label": "ex:ramp_van_der_pol",
+      "file": "ex_ramp_van_der_pol.png",
+      "source": "examples4.tex:841",
+      "level": 3,
+      "dim": 2,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 2,
+      "paper_nodes": 2
+    },
+    {
+      "label": "ex:periodicOrbit3_F4",
+      "file": "ex_periodicOrbit3_F4.png",
+      "source": "examples4.tex:917",
+      "level": 4,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 14,
+      "paper_nodes": 14
+    },
+    {
+      "label": "ex:periodicOrbit5",
+      "file": "ex_periodicOrbit5.png",
+      "source": "examples4.tex:979",
+      "level": 4,
+      "dim": 5,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 8,
+      "paper_nodes": 8
+    },
+    {
+      "label": "ex:missing_periodic_3D_F4",
+      "file": "ex_missing_periodic_3D_F4.png",
+      "source": "examples4.tex:1063",
+      "level": 4,
+      "dim": 3,
+      "differs": false,
+      "verdict": "identical",
+      "legacy_nodes": 9,
+      "paper_nodes": 9
+    }
+  ]
+}

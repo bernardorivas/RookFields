@@ -1,0 +1,2820 @@
+{
+  "generated_seconds": 380.6095118522644,
+  "seed": 20260728,
+  "rows": [
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 2
+      }
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 2
+      }
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 2
+      }
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "toggle",
+      "dim": 2,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 9,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 2
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 27,
+      "stg_changed": 7,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108,
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 27,
+      "stg_changed": 7,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108,
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108,
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 27,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 54
+      }
+    },
+    {
+      "network": "repressilator",
+      "dim": 3,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 27,
+      "stg_changed": 19,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 108,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 120,
+      "stg_changed": 38,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820,
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 120,
+      "stg_changed": 38,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820,
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 1,
+      "conley_changed": 1,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820,
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 120,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 410
+      }
+    },
+    {
+      "network": "cycle3",
+      "dim": 3,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 120,
+      "stg_changed": 112,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 820,
+        "unstable_edge": 12
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 60,
+      "stg_changed": 33,
+      "morse_nodes_changed": 4,
+      "conley_changed": 4,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640,
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 4,
+      "conley_changed": 4,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 60,
+      "stg_changed": 34,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640,
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054,
+        "unstable_edge": 486
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 60,
+      "stg_changed": 16,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 60,
+      "stg_changed": 55,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640,
+        "unstable_edge": 166
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 60,
+      "stg_changed": 5,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 60,
+      "stg_changed": 54,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640,
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054,
+        "unstable_edge": 486
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 60,
+      "stg_changed": 16,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 60,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 2054
+      }
+    },
+    {
+      "network": "cycle4",
+      "dim": 4,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 60,
+      "stg_changed": 55,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 3640,
+        "unstable_edge": 166
+      }
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_a",
+      "dim": 2,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 32
+      }
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 32
+      }
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 32
+      }
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N2_b",
+      "dim": 2,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 200,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "unstable_edge": 32
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1-regulation-codomain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-strict",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D3-f3-composition",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D2b-back-wall-all",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "D1b-regulation-domain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 1,
+      "spec": "paper",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {}
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1-regulation-codomain",
+      "sampled": 80,
+      "stg_changed": 50,
+      "morse_nodes_changed": 2,
+      "conley_changed": 2,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-strict",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960,
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D3-f3-composition",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D2b-back-wall-all",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "D1b-regulation-domain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 2,
+      "spec": "paper",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 2,
+      "conley_changed": 2,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1-regulation-codomain",
+      "sampled": 80,
+      "stg_changed": 50,
+      "morse_nodes_changed": 2,
+      "conley_changed": 2,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-strict",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960,
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D3-f3-composition",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483,
+        "unstable_edge": 240
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 80,
+      "stg_changed": 20,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D2b-back-wall-all",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "D1b-regulation-domain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 3,
+      "spec": "paper",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 2,
+      "conley_changed": 2,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960,
+        "unstable_edge": 188
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1-regulation-codomain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-strict",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2-back-wall-shifted",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960,
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D3-f3-composition",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483,
+        "unstable_edge": 240
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D4-semi-opaque-guard",
+      "sampled": 80,
+      "stg_changed": 20,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D2b-back-wall-all",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "D1b-regulation-domain",
+      "sampled": 80,
+      "stg_changed": 0,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_shift_out_of_range": 483
+      }
+    },
+    {
+      "network": "N3_B",
+      "dim": 3,
+      "level": 4,
+      "spec": "paper",
+      "sampled": 80,
+      "stg_changed": 80,
+      "morse_nodes_changed": 0,
+      "conley_changed": 0,
+      "diagnostics": {
+        "back_wall_out_of_range_strict": 960,
+        "unstable_edge": 188
+      }
+    }
+  ],
+  "unstable_edge_suppression": [
+    {
+      "network": "toggle",
+      "level": 3,
+      "sampled": 9,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "toggle",
+      "level": 4,
+      "sampled": 9,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "repressilator",
+      "level": 3,
+      "sampled": 27,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "repressilator",
+      "level": 4,
+      "sampled": 27,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "cycle3",
+      "level": 3,
+      "sampled": 120,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "cycle3",
+      "level": 4,
+      "sampled": 120,
+      "cells_with_nonempty_U": 1,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "cycle4",
+      "level": 3,
+      "sampled": 60,
+      "cells_with_nonempty_U": 243,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "cycle4",
+      "level": 4,
+      "sampled": 60,
+      "cells_with_nonempty_U": 243,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N2_a",
+      "level": 3,
+      "sampled": 200,
+      "cells_with_nonempty_U": 0,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N2_a",
+      "level": 4,
+      "sampled": 200,
+      "cells_with_nonempty_U": 0,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N2_b",
+      "level": 3,
+      "sampled": 200,
+      "cells_with_nonempty_U": 16,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N2_b",
+      "level": 4,
+      "sampled": 200,
+      "cells_with_nonempty_U": 16,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N3_B",
+      "level": 3,
+      "sampled": 80,
+      "cells_with_nonempty_U": 90,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    },
+    {
+      "network": "N3_B",
+      "level": 4,
+      "sampled": 80,
+      "cells_with_nonempty_U": 90,
+      "missing_U_edges": 0,
+      "parameters_affected": 0
+    }
+  ]
+}
