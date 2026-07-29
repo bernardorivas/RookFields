@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=70.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DSGRN_utils"
+version = "1.0.0"
+description = "DSGRN utilities"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Marcio Gameiro", email = "marciogameiro@gmail.com" },
+]
+requires-python = ">=3.9"
+dependencies = [
+  "DSGRN>=1.9.0",
+  "pychomp2>=1.0.4",
+  "graphviz>=0.20",
+  "matplotlib>=3.6.0",
+  "numpy>=1.23.0",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/marciogameiro/DSGRN_utils"

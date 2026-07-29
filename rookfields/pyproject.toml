@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=70.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rookfields"
+version = "0.1.0"
+description = "Paper-faithful reference implementation, example reproduction, and manifold simulation for the Rook Field monograph"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "DSGRN>=1.9.0",
+  "DSGRN_utils>=1.0.0",
+  "pychomp2>=1.0.4",
+  "numpy>=1.23.0",
+  "scipy>=1.10.0",
+  "matplotlib>=3.6.0",
+  "graphviz>=0.20",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::SyntaxWarning"]

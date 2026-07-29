@@ -14,3 +14,10 @@ __pycache__
 
 # Backup files
 *~
+
+# LaTeX build directory for the generated report
+rookfields/reports/_build/
+
+# JSON databases produced by the notebooks
+notebooks/*.json
+!notebooks/network*.json
