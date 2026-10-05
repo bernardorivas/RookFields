@@ -31,6 +31,11 @@ Measured effect of each change, and the evidence behind it, is in
 `../rookfields/reports/FINDINGS.md`. The differences are exercised by
 `../rookfields/tests/test_legacy_equivalence.py`, which pins both readings.
 
-The upstream git history for this directory was moved to
-`../../.dsgrn_utils-upstream.git` when it was vendored; merges from upstream are
-now manual.
+The upstream git history for this directory is at
+<https://github.com/marciogameiro/DSGRN_utils>; merges from upstream are manual.
+
+This copy is superseded by `DSGRN.Blowup` in the canonical DSGRN at
+`~/Work/Software/DSGRN` (github.com/bernardorivas/DSGRN). That version also
+implements condition (iii) of `defn:indecisive`, defaults to level 3, uses GB_n
+for ramp wall labellings, and fixes nodes without out-edges. It is kept only
+until `rookfields` migrates to `DSGRN.Blowup`.

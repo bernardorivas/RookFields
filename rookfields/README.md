@@ -36,9 +36,9 @@ cd code
 ```
 
 `DSGRN_utils` is installed editable from `code/DSGRN_utils` (the current fork).
-The stale duplicate that the old editable install pointed at has been moved to
-`code/_archive/src-DSGRN_utils-stale/`, along with the legacy `setup.py` that
-packaged it.
+It is superseded by `DSGRN.Blowup` in the canonical DSGRN at
+`~/Work/Software/DSGRN`; migrating `rookfields` to it is pending. A new venv
+should install DSGRN with `pip install ~/Work/Software/DSGRN`.
 
 ## Layout
 

@@ -14,9 +14,8 @@ RookFields is a research project extending DSGRN (Dynamic Signatures Generated b
 ## Repository Structure
 
 The repository contains:
-- `src/DSGRN_utils/`: Main utilities package for DSGRN extensions
-- `DSGRN/`: DSGRN library (git submodule/external dependency)
-- `DSGRN_utils/`: Additional DSGRN utilities (separate git repository)
+- `DSGRN_utils/`: vendored DSGRN_utils, aligned with `Rook_Field_Paper_v2` (see "DSGRN" below)
+- `rookfields/`: computes F_0..F_4, recomputes the monograph's examples, and validates geometrizations
 - `notebooks/`: Jupyter notebooks for analysis and figure generation
   - Boolean network analysis with CoLoMoTo tools
   - Truth table to GINsim conversions
@@ -114,4 +113,4 @@ DSGRN_utils.PlotMorseSets(morse_graph, stg, graded_complex)
 
 4. **Boolean Networks**: Recent work includes methods to convert boolean parameters to truth table/GINsim formats. See `notebooks/tt_to_ginsim.ipynb` and related notebooks.
 
-5. **Git Submodules**: DSGRN/ and DSGRN_utils/ directories are separate git repositories. Changes to these should be committed in their respective repositories.
+5. **DSGRN**: There is no local DSGRN clone here. The canonical copy is `~/Work/Software/DSGRN` (github.com/bernardorivas/DSGRN). It includes `DSGRN.Blowup`, the successor of `DSGRN_utils`, which implements condition (iii) of `defn:indecisive` and defaults to level 3. A new venv should install it with `pip install ~/Work/Software/DSGRN`, which is non-editable, so reinstall after updating it. Migrating `rookfields` from the vendored `DSGRN_utils/` to `DSGRN.Blowup` is a pending task.
