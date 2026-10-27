@@ -769,7 +769,6 @@ the geometric modification."""),
     L.append(r"\section*{Reproducing}")
     L.append(
         r"""\begin{verbatim}
-cd code
 ./.venv/bin/python -m pytest rookfields/tests          # 145 tests
 ./.venv/bin/python -m rookfields.examples --spec both  # this report's data
 ./.venv/bin/python -m rookfields.hypotheses
@@ -778,9 +777,8 @@ cd code
 ./.venv/bin/python -m rookfields.report_pdf            # this document
 \end{verbatim}
 
-Full prose discussion in \texttt{code/rookfields/reports/FINDINGS.md}; the
-actionable items are also filed in \texttt{coauthor-todos.md}. No file under
-\texttt{paper/} was modified."""
+Full prose discussion in \texttt{rookfields/reports/FINDINGS.md}. The
+manuscript was not modified."""
     )
 
     L.append(r"\end{document}")

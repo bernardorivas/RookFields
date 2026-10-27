@@ -1,6 +1,6 @@
 # rookfields
 
-Companion code for `paper/Rook_Field_Paper_v2`. Three jobs:
+Companion code for `Rook_Field_Paper_v2`. Three jobs:
 
 1. compute the multivalued maps `F_0 .. F_4` under both the `DSGRN_utils`
    implementation and the live manuscript definitions, and diff them;
@@ -11,12 +11,12 @@ Companion code for `paper/Rook_Field_Paper_v2`. Three jobs:
 Read [`reports/FINDINGS.md`](reports/FINDINGS.md) first — it is the summary of
 what all of this turned up.
 
-`paper/` is never modified. Regenerated figures land in `figures/` for the
+The manuscript is never modified. Regenerated figures land in `figures/` for the
 authors to copy across if they want them.
 
 ## Status
 
-`code/DSGRN_utils` now implements the manuscript's definitions by default.
+`DSGRN_utils` now implements the manuscript's definitions by default.
 `CubicalBlowupGraph(..., legacy=True)` and `ConleyMorseGraph(..., legacy=True)`
 restore the superseded behaviour, so figures published before the alignment
 still reproduce exactly. The changes and their measured effect are in
@@ -26,16 +26,14 @@ Morse graphs and Morse sets under both readings, are in
 
 ## Environment
 
-The venv at `code/.venv` was built by a pyenv interpreter that no longer exists;
-it has been re-pointed at Homebrew's Python 3.13 (the site-packages tree,
-including the DSGRN and pyCHomP2 C extensions, was intact and needed no rebuild).
+From the repository root, with a Python 3.13 virtual environment in `.venv`
+that has DSGRN, pyCHomP2, `DSGRN_utils` and `rookfields` installed:
 
 ```bash
-cd code
 ./.venv/bin/python -c "import DSGRN, pychomp, DSGRN_utils, rookfields; print('ok')"
 ```
 
-`DSGRN_utils` is installed editable from `code/DSGRN_utils` (the current fork).
+`DSGRN_utils` is installed editable from `DSGRN_utils/` (the current fork).
 It is superseded by `DSGRN.Blowup` in the canonical DSGRN at
 <https://github.com/bernardorivas/DSGRN>; migrating `rookfields` to it is pending. A new venv
 should install DSGRN with `pip install git+https://github.com/bernardorivas/DSGRN.git`.

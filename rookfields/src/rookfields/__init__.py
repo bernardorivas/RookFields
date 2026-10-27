@@ -1,6 +1,6 @@
 """Rook Fields: paper-faithful reference implementation and simulation tools.
 
-Companion code for ``paper/Rook_Field_Paper_v2``.  Three jobs:
+Companion code for ``Rook_Field_Paper_v2``.  Three jobs:
 
 1. compute the combinatorial multivalued maps ``F_0 .. F_4`` under both the
    ``DSGRN_utils`` implementation and the live manuscript definitions, and diff

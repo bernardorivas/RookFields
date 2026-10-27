@@ -6,7 +6,7 @@ else -- the rook field, wall labels, flow directions, lap numbers, unstable
 cells, and the blowup/cubical index translation -- is reused unchanged, because
 those already match the manuscript.
 
-Manuscript sources (``paper/Rook_Field_Paper_v2``):
+Manuscript sources (``Rook_Field_Paper_v2``):
 
 * ``def:rookfield``            RookFields6.tex:630-668
 * ``def:active_regulation``    RookFields6.tex:738-758

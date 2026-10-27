@@ -1,6 +1,6 @@
 """The two specs must agree with the two modes of `DSGRN_utils`.
 
-`code/DSGRN_utils` now implements the manuscript's definitions by default, with
+`DSGRN_utils` now implements the manuscript's definitions by default, with
 `legacy=True` restoring the superseded behaviour.  Two guarantees are pinned
 here:
 

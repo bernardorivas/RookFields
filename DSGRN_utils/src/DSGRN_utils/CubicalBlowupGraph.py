@@ -16,7 +16,7 @@ class CubicalBlowupGraph:
     `legacy=True` restores the pre-2026-07-28 behaviour of this file, which is
     needed to reproduce figures published before the definitions were aligned;
     the differences are documented at each use of `self.legacy` below and
-    measured in `code/rookfields/reports/FINDINGS.md`.
+    measured in `rookfields/reports/FINDINGS.md`.
     """
 
     def __init__(self, parameter=None, labelling=None, num_thresholds=None, self_edges=True,

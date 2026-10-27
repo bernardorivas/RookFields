@@ -1,10 +1,10 @@
 # Findings: `Rook_Field_Paper_v2` against `DSGRN_utils`
 
-Everything below is reproducible with `pytest code/rookfields/tests` and the
-report generators listed at the end. No file under `paper/` was modified.
+Everything below is reproducible with `pytest rookfields/tests` and the
+report generators listed at the end. The manuscript was not modified.
 
 **Status: the manuscript's definitions have been adopted as canonical.**
-`code/DSGRN_utils` now implements them by default; passing `legacy=True` to
+`DSGRN_utils` now implements them by default; passing `legacy=True` to
 `CubicalBlowupGraph` / `ConleyMorseGraph` restores the superseded behaviour so
 figures published before the alignment still reproduce. The changes are C1–C5
 below.
@@ -353,7 +353,7 @@ which is meant where.
 
 ## What changed in the code
 
-`code/DSGRN_utils` now implements the manuscript's definitions:
+`DSGRN_utils` now implements the manuscript's definitions:
 
 | | file | change |
 |---|---|---|
@@ -391,7 +391,6 @@ parameter node tried, across five networks in dimensions 2 and 3.
 ## Reproducing
 
 ```bash
-cd code
 ./.venv/bin/python -m pytest rookfields/tests            # 182 tests
 ./.venv/bin/python -m rookfields.audit                   # reports/divergence.md
 ./.venv/bin/python -m rookfields.examples --spec both    # reports/examples.md

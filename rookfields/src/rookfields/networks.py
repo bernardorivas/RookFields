@@ -1,7 +1,7 @@
 """The regulatory networks and ramp systems used in the monograph.
 
 Network specifications are taken from the authors' own notebook
-``code/Chapter16_adapted.ipynb`` and cross-checked against the parameter-graph
+``Chapter16_adapted.ipynb`` and cross-checked against the parameter-graph
 sizes quoted in the text.  All four large networks reproduce their stated sizes
 exactly:
 

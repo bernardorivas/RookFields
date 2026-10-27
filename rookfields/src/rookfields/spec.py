@@ -1,7 +1,7 @@
 """Algorithm specifications for the combinatorial multivalued maps F_0 .. F_4.
 
 The implementation in ``DSGRN_utils.CubicalBlowupGraph`` and the definitions in
-``paper/Rook_Field_Paper_v2`` have drifted apart.  Rather than pick a winner, we
+``Rook_Field_Paper_v2`` have drifted apart.  Rather than pick a winner, we
 parameterise every point of disagreement so both semantics can be computed and
 diffed.  ``LEGACY`` reproduces ``DSGRN_utils`` exactly; ``PAPER`` implements the
 live manuscript definitions.
